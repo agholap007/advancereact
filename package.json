@@ -6,7 +6,7 @@
   "repository": "https://github.com/agholap007/advancereact.git",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon --exec babel-node lib/server.js",
+    "start": "set NODE_PATH=./lib&& nodemon --exec babel-node lib/server.js",
     "webpack": "webpack -wd",
     "lint": "eslint ./ --ignore-path .gitignore",
     "lint:fix": "npm run lint -- --fix",
@@ -25,6 +25,8 @@
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.4",
     "eslint": "^7.8.1",
     "eslint-plugin-react": "7.19.0",
     "jest": "^26.4.2",
@@ -43,6 +45,7 @@
     "@babel/preset-env": "^7.11.5",
     "@babel/preset-react": "^7.10.4",
     "@imaginary-cloud/eslint-config-react": "1.0.1",
+    "axios": "^0.20.0",
     "babel-loader": "^8.1.0",
     "ejs": "^3.1.5",
     "eslint-config-airbnb": "18.1.0",
